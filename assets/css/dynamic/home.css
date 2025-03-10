@@ -1,0 +1,37 @@
+.modal-content-fc .modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content-fc .close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  padding: 10px;
+  top: 17px;
+  right: 330px;
+  z-index: 1;
+}
+#modal_Home{
+  transition: all ease 1s;
+}
+.modal-content-fc .close:hover,
+.modal-content-fc .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content-fc .btnfechar{cursor: pointer;}
+.modal-content-fc .img-modal{
+  width: 350px;
+  margin: 5% 10% 15% 50%;
+border-radius: 24px;
+}

@@ -1,0 +1,698 @@
+/* #Main Menu */
+.main-navigation {
+	font-style: $menu_font_style;
+	font-weight: $menu_font_weight;
+	font-size: $menu_font_size{px};
+	line-height: $menu_line_height;
+	font-family: @font_family( $menu_font_family );
+	letter-spacing: $menu_letter_spacing{px};
+}
+
+.main-navigation a,
+.menu-item-has-children:before {
+	color: $secondary_text_color;
+}
+
+.main-navigation a:hover,
+.main-navigation .current_page_item>a,
+.main-navigation .current-menu-item>a,
+.main-navigation .current_page_ancestor>a,
+.main-navigation .current-menu-ancestor>a {
+	color: $link_hover_color;
+}
+
+/* #Mobile Menu */
+.mobile-menu-toggle-button {
+	color: $invert_text_color;
+	background-color: $accent_color;
+}
+
+.line-header-buy {
+	margin: 0 0 15px 0;
+	border: 1px solid #f2f2f2;
+}
+
+
+
+/* menu */
+#site-navigation .menu-item a {
+	color: #334155;
+	padding-right: 4px;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+#site-navigation .menu-item a:hover,
+#site-navigation .menu-item a:focus{color:red;}
+
+#site-navigation .menu-item a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 85%;
+  left: 0;
+  background: red;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: center;		
+}
+#site-navigation .menu-item a:hover {
+	color: red;
+}
+#site-navigation .menu-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+	
+
+}
+#site-navigation .sub-menu {
+	padding: 0;
+}
+
+#site-navigation .sub-menu .menu-item a:hover::after{
+	transform: inherit;
+  transform-origin: inherit;
+	
+}
+#site-navigation .sub-menu .menu-item a::after {
+  background: inherit;
+  transition: inherit;
+  transform: inherit;
+}
+#site-navigation .sub-menu li:before {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+#site-navigation .menu-item .sub-menu li a{
+	padding: 0!important;
+	padding: 15px 0;	
+}
+#site-navigation .menu-item .sub-menu li:not(:last-child){
+	border-bottom-style:solid;
+	border-bottom-color:#c4c4c4;
+	border-bottom-width:1px;
+}
+#site-navigation .menu-item.current-menu-item a
+{
+  color: red;
+	font-weight: 500;
+}
+#site-navigation .menu-item.current-menu-item .sub-menu li a
+{
+  color: #334155;
+	font-weight: 500;
+}
+
+#site-navigation .menu-item.current-menu-item .sub-menu li a:hover{
+	color: red;
+}
+
+.main-navigation li.menu-item-has-children:before{
+	color: #000;
+	font-weight: 600;
+}
+
+
+#site-navigation .menu-item:hover::before{
+	color: red!important;
+	font-weight: 600;
+}
+
+
+#site-navigation .menu-item.current-menu-item:before
+{
+	color: red!important;
+	font-weight: 600;
+}
+
+/* Inicio menu mobile */
+#site-navigation-mobile .menu-item a {
+	color: #334155;
+	padding-right: 4px;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+#site-navigation-mobile .menu-item a:hover,
+#site-navigation-mobile .menu-item a:focus{color:red;}
+
+#site-navigation-mobile .menu-item a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 85%;
+  left: 0;
+  background: red;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: center;		
+}
+#site-navigation-mobile .menu-item a:hover {
+	color: red;
+}
+#site-navigation-mobile .menu-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+	
+
+}
+#site-navigation-mobile .sub-menu {
+	padding: 0;
+}
+
+#site-navigation-mobile .sub-menu .menu-item a:hover::after{
+	transform: inherit;
+  transform-origin: inherit;
+	
+}
+#site-navigation-mobile .sub-menu .menu-item a::after {
+  background: inherit;
+  transition: inherit;
+  transform: inherit;
+}
+#site-navigation-mobile .sub-menu li:before {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+#site-navigation-mobile .menu-item .sub-menu li a{
+	padding: 0!important;
+	padding: 15px 0;	
+}
+#site-navigation-mobile .menu-item .sub-menu li:not(:last-child){
+	border-bottom-style:solid;
+	border-bottom-color:#c4c4c4;
+	border-bottom-width:1px;
+}
+#site-navigation-mobile .menu-item.current-menu-item a
+{
+  color: red;
+	font-weight: 500;
+}
+#site-navigation-mobile .menu-item.current-menu-item .sub-menu li a
+{
+  color: #334155;
+	font-weight: 500;
+}
+
+#site-navigation-mobile .menu-item.current-menu-item .sub-menu li a:hover{
+	color: red;
+}
+
+.main-navigation li.menu-item-has-children:before{
+	color: #000;
+	font-weight: 600;
+}
+
+
+#site-navigation-mobile .menu-item:hover::before{
+	color: red!important;
+	font-weight: 600;
+}
+
+
+#site-navigation-mobile .menu-item.current-menu-item:before
+{
+	color: red!important;
+	font-weight: 600;
+}
+/* fim menu mobile */
+button.mobile-menu-toggle-button,
+.mobile-menu-toggle-button{
+	background: #334155!important;
+}
+
+
+/* menu hamburguer */
+.mobile-menu-toggle-button{
+	top: 0px!important;
+}
+/*  */
+.box-menu-content{
+	width: fit-content;
+	height: 100%;
+	background: white;
+	position: absolute;
+	text-align: left;
+	z-index: 99;
+	opacity: 0;
+	left: -500px;
+	pointer-events: none;
+	transition: 0.3s;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.back-menu.active .box-menu-content{
+	opacity: 1;
+	left: 0px;
+	pointer-events: fill;
+}
+.menu_icon_box{
+	width: fit-content;
+	height: auto;
+	background-color: white;
+	margin-right: 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.2s;
+	left: 10px;
+}
+.btn-ham-open,
+.btn-ham-close{
+	width: 28px;
+	cursor: pointer;
+}
+
+
+.btn-ham-close {
+	position: relative;
+	float: right;
+	left: -10px;
+	top: 8px;
+	
+}
+.line1,	.line2,	.line3{
+	width: 40px;
+	height: 4px;
+	margin: 10px 8px;
+	background-color: #000;
+	border-radius: 50px;
+}
+.active .line1{
+	transform: translate(0px , 15px)rotate(45deg);
+}
+.active .line2{
+	opacity: 0;
+}
+.active .line3{
+	transform: translate(0px , -15px)rotate(-45deg);
+}
+nav.menu-hamburguer{
+	background: white;
+}
+
+nav.menu-hamburguer ul li{
+	list-style: none;
+	transition: 0.3s;
+}
+nav.menu-hamburguer ul li:hover{
+	/* background-color: #c6c6c6; */
+}
+nav.menu-hamburguer ul li a{
+	color: #000;
+	font-size: 15px;
+	padding: 10px 30px;
+	display: block;
+	text-decoration: none;
+}
+.main-navigation-inner {
+	margin-left: 15px;
+}
+.menu-hamburguer .menu .menu-item a{
+	font-weight: 700;
+}
+
+.menu-hamburguer .menu .menu-item-has-children .sub-menu a{
+	font-weight: inherit;
+}
+.site-header__wrap .menu-sem-espaco.space-between-content{
+	justify-content: inherit;
+}
+.site-header .menu-sem-espaco .site-branding .content-brand {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.menu-mobile-version{display: none;}
+
+
+
+
+
+
+
+.back-menu{
+	position: fixed;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+.back-menu.active{
+	opacity: 1;
+	visibility: visible;
+}
+
+.site-branding .custom-logo {
+  position: relative;
+}
+.btn-style {
+	background: #334155;
+	padding: 4px;
+	border-radius: 8px;
+	width: 40px;
+	}
+#site-navigation .menu li a {
+	hyphens: none;
+}
+@media (min-width: 576px) {
+	#btn-menu-desktop{display: block;}
+	#btn-menu-mobile{display: none;}
+}
+
+@media (min-width: 640px) and (max-width: 800px) {
+	.site-branding {
+    margin-right: 0;
+		margin-left: 4px;
+	}
+	.main-navigation .menu > li {
+    padding: inherit;
+	}
+	.menu_icon_box{
+		margin-right: 4px;
+	}
+	#site-navigation {
+    margin: 0 4px;
+	}
+	.site-header__wrap .menu-sem-espaco.space-between-content {
+    justify-content: space-between;
+	}
+	.main-navigation-inner {
+		margin-left: inherit;
+	}
+}
+
+
+@media (min-width: 576px) and (max-width: 640px) {
+	.site-header__wrap .menu-sem-espaco.space-between-content {
+    justify-content: center;
+	}
+	.menu_icon_box{
+		position: absolute;
+	}
+}
+
+@media (max-width: 940px) {
+	.site-header__wrap.container {
+    max-width: inherit;
+	}
+}
+@media (max-width: 640px) {
+
+	#site-navigation .menu-item .sub-menu li:not(:last-child) {
+		border-bottom-style: inherit;
+		border-bottom-color: inherit;
+		border-bottom-width: 1px;
+	}
+}
+
+
+
+
+
+@media (max-width: 800px) {
+	.menu-desktop-version {display: none;}
+	#btn-menu-desktop{display: none;}
+	#btn-menu-mobile{display: block!important;}
+	.menu_icon_box{
+		position: absolute;
+		margin: 0;
+	}
+	.box-menu-content{
+		width: 75%;
+	}
+
+	.site-header__wrap .menu-sem-espaco.space-between-content{
+		justify-content: center;
+	}
+	.main-navigation-inner{
+		margin-left: 10px;
+	}
+	#site-navigation-mobile .menu-item a{
+		font-weight: 700;
+	}
+	#site-navigation-mobile .menu-item .sub-menu li a	{
+		font-weight: inherit;
+	}
+	.menu-mobile-version{display: block;}
+	
+	.main-navigation.mobile-menu.mobile-menu-open {
+		left: 0;
+	}
+	.main-navigation.mobile-menu.mobile-menu-open button{
+		position: relative!important;
+		left: 40px!important;
+		float: right!important;
+		display: block!important;
+
+	}
+	.main-navigation.mobile-menu{
+		transition: inherit!important;
+	}
+	.mobile-menu-toggle-button{
+		top: 117px!important;
+		left: -140%;
+	}
+	#site-navigation-mobile .menu-item .sub-menu li{
+		border: inherit!important;
+	}
+}
+
+/* menu hamburguer final */
+/* inicio - acessibilidade */
+#barraAcessibilidade{
+	display: flex;
+	position: fixed;
+	top: 248px;
+	right: 0px;
+	color: black;
+	z-index: 99999;
+}
+
+#barraAcessibilidade a{
+		color: black;
+		padding: 5px 10px;
+		font-size: 1rem;
+}
+
+#barraAcessibilidade #menuAcessibilidade{
+		border: 1px solid #ddd;
+		background-color: #fff;
+}
+
+#menuAcessibilidade a{
+		margin-bottom: 0px;
+}
+	
+#barraAcessibilidade #btnAcessibilidade img{
+			width: 40px;
+}
+
+.inversed {
+		background: black;
+		-webkit-filter: invert(100%);
+		filter: invert(100%);
+}
+
+.hipelight-links a{
+		background-color: #df5!important;
+		color: black!important;
+}
+
+.contrast,
+.contrast nav,
+.contrast div,
+.contrast li,
+.contrast ol,
+.contrast header,
+.contrast footer,
+.contrast section,
+.contrast main,
+.contrast aside,
+.contrast article {
+		background: black !important;
+		color: white !important;
+}
+
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p,
+.contrast label,
+.contrast strong,
+.contrast em,
+.contrast cite,
+.contrast q,
+.contrast i,
+.contrast b,
+.contrast u,
+.contrast a,
+.contrast span {
+		color: white !important;
+}
+
+.contrast button,
+.contrast input[type=button],
+.contrast input[type=reset],
+.contrast input[type=submit] {
+		background: black !important;
+		color: yellow !important;
+		border: none !important;
+}
+
+.contrast img.on-contrast-force-gray {
+		filter: grayscale(100%) contrast(120%);
+}
+
+.contrast img.on-contrast-force-white {
+		filter: brightness(0) invert(1);
+}
+
+.contrast input[type=text],
+.contrast input[type=password],
+.contrast input[type=url],
+.contrast input[type=search],
+.contrast input[type=email],
+.contrast input[type=tel],
+.contrast input[type=date],
+.contrast input[type=month],
+.contrast input[type=week],
+.contrast input[type=datetime],
+.contrast input[type=datetime-local],
+.contrast textarea,
+.contrast input[type=number] {
+		background: black !important;
+		border: 1px solid white !important;
+		color: white !important;
+}
+
+.contrast div#topbarLink {
+		background: #fff!important;
+}
+
+.contrast .govsp-portal {
+		background: #fff!important;
+}
+
+.contrast .govsp-portal img[src*="https://saopaulo.sp.gov.br/barra-govsp/img/logo-governo-do-estado-sp.png"] {
+		background: url(https://saopaulo.sp.gov.br/barra-govsp/img/logo-governo-do-estado-sp-negativo-1.png) no-repeat!important;
+		content: url(https://saopaulo.sp.gov.br/barra-govsp/img/logo-governo-do-estado-sp-negativo-1.png);
+}
+.contrast #govsp-topbarGlobal.blu-e #topbarLink a {
+		color: #111!important;
+}
+
+@media only screen and (min-width: 769px) {
+.contrast div#govsp-topbarGlobal div#topbarGlobal #topbarLink {
+		background-repeat: no-repeat!important;
+		background-position: right!important;
+		}
+}
+
+
+.contrast .govsp-link {
+		color: #fff!important;
+		border: 1px solid;
+}
+
+.contrast img.govsp-icon-social {
+		filter: brightness(100);
+}
+
+.contrast img.govsp-icon-social:hover {
+		box-shadow: none;
+}
+
+.contrast img.govsp-acessibilidade {
+		filter: brightness(100);
+}
+
+.contrast .govsp-portal {
+		width: 250px!important;
+}
+
+.contrast a.govsph-links-governo {
+		color: #fff;
+}
+
+.contrast img.govsph-icon-social {
+		filter: brightness(100);
+}
+
+.contrast p.govsph-pasta {
+		background: #fff!important;
+		color: #111!important;
+		width: 320px;
+		padding-right: 130px;
+		padding-top: 14px;
+		padding-bottom: 0px;
+		margin-top: -14px;
+		height: 80px;
+		background-repeat: no-repeat!important;
+		background-position: right!important;
+}
+
+.contrast div#govsph-topbarGlobal div#topbarGlobal {
+		border: 1px solid #fff;
+}
+
+.contrast .govsph-logo {
+		background: url(https://saopaulo.sp.gov.br/barra-govsp/img/logo-sp-negativo.png) no-repeat!important;
+}
+
+.contrast .govsph-oneline {
+		padding-top: 20px!important;
+}
+
+.contrast a.govsp-links-footer {
+		color: #fff;
+}
+.display-grid{
+			display: grid!important;
+			border: 1px solid red;
+	}
+	#menuAcessibilidade{
+			display: none;
+			border: 1px solid yellow;        
+	}
+	.contrast-color{
+			background: black!important;
+			color: white!important;
+	}
+	.back-link{
+			background: yellow!important;
+	}
+	#barraAcessibilidade .icon-acessibilidade{width: 16px; margin-right: 8px;}
+	.iconBranco,
+.displayNone{
+display: none;
+}
+.displayBlock{
+display: block;
+}
+.align-items-center-cont {
+	-ms-flex-align: center !important;
+	align-items: center !important;
+}
+.disp-flex {
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+/* fim - acessibilidade */
+

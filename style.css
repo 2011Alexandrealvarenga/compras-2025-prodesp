@@ -4866,3 +4866,112 @@ color: #334155!important;
     align-items: center;
 	flex-wrap: wrap;
 }
+/* inicio - importado do plugin css and js */
+/* FONT-SIZE TÍTULO POST */
+.single-post .entry-title{
+	font-size: 1.8rem !important;
+}
+/* RETIRAR NOME E CATEGORIA DO POST */
+.byline{
+	display: none !important;
+}
+.cat-links{
+	display:none !important;
+}
+/* LISTS */
+#lists .backimg .overlay{
+	background-color: #000000;
+    opacity: 0.7;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 258px;
+    margin-top: 181px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+#lists .backimg h3{
+	font-size: 3rem;
+	font-weight: 600;
+	margin-top: 75px;
+	position: relative;
+    z-index: 99;
+    color: white;
+}
+#lists #post .title a{
+	font-family: "Montserrat", Sans-serif;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #000000;
+}
+#lists #post p{
+	text-align: justify;
+	font-family: "Montserrat", Sans-serif;
+	font-weight: 400;
+	margin: 15px 15px 15px 0px;
+	font-size: 14px;
+}
+#lists #post .bt{
+	text-align: center;
+	font-family: "Montserrat", Sans-serif;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #FF0000;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #FF0000;
+	border-radius: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	width: 250px;
+	display: block;
+	margin-bottom:15px;
+}
+#lists #post .bt:hover{
+	color: #FFFFFF;
+	background-color: #FF0000;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #FF0000;
+}
+#lists #post .new{
+	background: red;
+	padding: 5px 15px;
+	margin-left: 15px;
+	font-size: 16px;
+	color: white;
+}
+
+/* ITSM */
+#itsm {
+/* 	min-height: calc(100vh - 544.8px);	 */
+	
+	margin-top: 3rem;
+}
+#itsm h2{
+	margin: 0;
+	text-align: center;
+}
+
+#itsm h4 span{
+	font-weight: 700;
+	color: #ff0000;
+	margin-top: 0;
+}
+
+
+/* #itsm-form {
+	margin-top: 2rem;
+} */
+
+#itsm-form h2{
+	margin: 0;
+}
+
+#itsm-form small{
+	color:red;
+	font-weight:700;
+}
+
+/* fim - importado do plugin css and js */

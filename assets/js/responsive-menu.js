@@ -268,3 +268,25 @@ destacarLink.addEventListener('click', ()=>{
 // fim - contrast
 // fim -acessibilidade
 
+jQuery(document).ready(function( $ ){
+	
+	if ($(window).width() > 960) {
+		$(window).scroll(function () {
+			if($(window).scrollTop() > 200) {
+				$("#menu").addClass('hfe-sticky');
+				$( "#menu" ).slideDown( "slow" );
+			} else {
+				$( "#menu" ).slideDown( "slow" );
+				$("#menu").removeClass('hfe-sticky');
+			}
+		});
+	}
+	
+	// RELOAD TO TOP
+	
+	window.onbeforeunload = function () {
+	  window.scrollTo(0, 0);
+	}
+		
+});
+	

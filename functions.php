@@ -722,6 +722,15 @@ function capcacitacao_js()
 }
 add_action('wp_footer', 'capcacitacao_js');
 
+function toolkit_js()
+{ 
+	if(is_page('toolkits-documentos-padronizados')){  
+		wp_register_script('toolkit_css', get_stylesheet_directory_uri().'/assets/js/toolkit.js', array('jquery'));
+		wp_enqueue_script('toolkit_css');
+	}	
+}
+add_action('wp_footer', 'toolkit_js');
+
 function capacitacao_css()
 { 
 	if(is_page('capacitacao')){
@@ -730,6 +739,15 @@ function capacitacao_css()
   }
 }
 add_action('wp_enqueue_scripts', 'capacitacao_css');
+
+function toolkit_css()
+{ 
+	if(is_page('toolkits-documentos-padronizados')){
+		wp_register_style('toolkit_css', get_stylesheet_directory_uri().'/assets/css/toolkit.css');
+		wp_enqueue_style('toolkit_css');
+  }
+}
+add_action('wp_enqueue_scripts', 'toolkit_css');
 
 function home_css()
 { 

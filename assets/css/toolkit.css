@@ -1,0 +1,51 @@
+#DFD-Modal{
+	background: #f4b5a1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+	position: fixed;
+    top: 50px;
+    display: none;
+    right: 200px;
+	z-index: 199;
+}
+
+#DFD-Modal b,#DFD-Modal span{
+	color:#333;
+}
+
+#DFD-Modal #bt-dfd-download{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+	background: #444;
+    border: 1px solid #444;
+	padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+#DFD-Modal #bt-dfd-download:hover{
+	background: white;
+    color:#444;
+}
+
+#DFD-Modal .close-dfd{
+	float: right;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    top: -20px;
+    right: -20px;
+    background: #444;
+    color: white;
+    padding: 0px 3px;
+    border-radius: 0px 5px 0px 5px;
+	color: white;
+	cursor:pointer;
+}
+#DFD-Modal .close-dfd:hover{
+	background: white;
+	color:#444;
+}

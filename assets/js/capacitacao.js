@@ -30,11 +30,15 @@ jQuery(document).ready(function(){
   );
   
 });
- //  ancora 
+ 
+//  ancora 
 if (window.location.href.includes("ircomecar")) {
+  console.log('ir começar2');
     window.scrollBy(0, 400);
 }else if(window.location.href.includes("irfluxo-das-contratacoes")) {
-  window.scrollBy(0, 900);
+  console.log('ir contratacoes');
+
+  window.scrollBy(0, 680);
 }
 // inicio - conteudo js do plugin da pagina capacitacao
 const steps = document.querySelectorAll('.step')

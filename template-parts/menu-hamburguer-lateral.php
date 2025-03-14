@@ -12,7 +12,7 @@
         $args = apply_filters( 'Prodesp-theme/menu/main-menu-args', array(
           'theme_location'   => 'main_hamburguer',
           'container'        => '',
-          'menu_id'          => 'main-menu',
+          'menu_id'          => 'main-menudois',
           'fallback_cb'      => 'Prodesp_set_nav_menu',
           'fallback_message' => esc_html__( 'Set main menu', 'Prodesp' ),
         ) );
@@ -30,7 +30,7 @@
         $args = apply_filters( 'Prodesp-theme/menu/main-menu-args', array(
           'theme_location'   => 'main_mobile_version',
           'container'        => '',
-          'menu_id'          => 'main-menu',
+          'menu_id'          => 'main-menutres',
           'fallback_cb'      => 'Prodesp_set_nav_menu',
           'fallback_message' => esc_html__( 'Set main menu', 'Prodesp' ),
         ) );

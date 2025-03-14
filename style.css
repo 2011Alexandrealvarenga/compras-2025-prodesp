@@ -4866,6 +4866,16 @@ color: #334155!important;
     align-items: center;
 	flex-wrap: wrap;
 }
+.main-navigation ul#main-menudois {
+  display: flex;
+  align-items: center;
+flex-wrap: wrap;
+}
+.main-navigation ul#main-menutres {
+  display: flex;
+  align-items: center;
+flex-wrap: wrap;
+}
 /* inicio - importado do plugin css and js */
 /* FONT-SIZE TÍTULO POST */
 .single-post .entry-title{

@@ -724,6 +724,10 @@ add_action('wp_footer', 'capcacitacao_js');
 
 function toolkit_js()
 { 
+	// insere javascript em todas as paginas
+	// wp_register_script('general_js', get_stylesheet_directory_uri().'/assets/js/general.js', array('jquery'));
+	// wp_enqueue_script('general_js');
+
 	if(is_page('toolkits-documentos-padronizados')){  
 		wp_register_script('toolkit_css', get_stylesheet_directory_uri().'/assets/js/toolkit.js', array('jquery'));
 		wp_enqueue_script('toolkit_css');
@@ -786,3 +790,5 @@ function set_cache_headers() {
 }
 add_action('send_headers', 'set_cache_headers');
  */
+
+
